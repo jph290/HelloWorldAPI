@@ -10,7 +10,10 @@ namespace HelloWorldAPI.Tests
         [TestMethod]
         public void TestMethod1()
         {
+            HelloWorld testInfo = new HelloWorld();
+            string expected = "Hello World!";
 
+            Assert.AreEqual(expected, testInfo.Welcome, false, "The response is not Hello World!");
         }
     }
 }
